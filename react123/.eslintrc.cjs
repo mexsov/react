@@ -34,6 +34,7 @@ module.exports = {
     ],
     "react-refresh/only-export-components": [
       "warn",
+      'react/prop-types': 0,
       { allowConstantExport: true },
     ],
   },
