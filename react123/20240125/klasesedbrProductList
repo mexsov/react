@@ -1,0 +1,24 @@
+import { ListItem } from "./klasesdarbas25";
+export const ProductList = () => {
+
+    const itemsToBuy = [
+        { productName: 'Pienas', },
+        { productName: 'Batonas', },
+        { productName: 'Kiausiniai', },
+    ];
+
+    return (
+        <div>
+        <ul>
+        { itemsToBuy.map{
+            (item) => {
+
+            }
+    }
+}
+</ul>
+    < /div>
+    )
+        
+        
+}
