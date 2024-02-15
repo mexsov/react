@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-// import {people };
-import axios, { Axios } from "axios"; 
+import { people } from "../useState/studentai";  
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 export const VienasStudentas = () => 
 {
@@ -16,7 +16,9 @@ export const VienasStudentas = () =>
     },[]);
     const VienasStudentas = people.find((person) => person.Id.toString() === id);
     return(
+        <>
         <h1>{post.title}</h1>
         <h3>{post.body}</h3>
+        </>
     );
 };

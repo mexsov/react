@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledButton = Styled.button`
+export const StyledButton = styled.button`
 backround-color: yellow;
 height: 100px;
 `;

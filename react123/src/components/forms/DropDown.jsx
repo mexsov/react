@@ -1,8 +1,8 @@
 import { useState } from "react"
-
-
+import { InputField } from "./InputField";
+  
 export const Dropdown = () => {
-
+ 
 const [dropdownValue, setDropdownValue] = useState('Option2');
 
 const changeDropdownValue = (e) => {
@@ -14,13 +14,13 @@ const changeDropdownValue = (e) => {
             <label >
                 Dropdown
                 <select value={dropdownValue} onChange={changeDropdownValue}>
-                    <option value="option1">Option 1 </option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="opt3">opt3 </option>
+                    <option value="opt2">opt2</option>
+                    <option value="opt1">opt1</option>
                 </select>
             </label>
         </form>
-        <p>as vaziuosi i</p>
+        <p>   Sios savaites pirkiniai  {dropdownValue}</p>
         </>
     )
 }

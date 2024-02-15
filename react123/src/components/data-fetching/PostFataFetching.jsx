@@ -17,7 +17,7 @@ const [isLoading, setIsLoading] = useState(true);
     }, []);
 
 
-    console.log("post", postsArray);
+    // console.log("post", postsArray);
 
     if (isLoading){
        return <div>Lauiam kol postai parsisius</div>;
@@ -27,7 +27,7 @@ const [isLoading, setIsLoading] = useState(true);
     <> 
     <h1>Post list</h1>
     {postsArray.map((post) => (
-    <Post key={Post.id} title={post.title} body={post.body}/>
+    <Post key={post.id} title={post.title} body={post.body}/>
     ))}
     </>
     );

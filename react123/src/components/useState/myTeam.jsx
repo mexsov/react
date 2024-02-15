@@ -1,14 +1,13 @@
 
-
+import { useNavigate } from "react-router-dom";
 import { people } from "./studentai"
-import { Route, Routes } from 'react-router-dom'
 import { useState } from "react"
 export const MyTeam = () => {
 
-    const [myTeam, setMyTeam] = useState([]);
-const navigete = useNavigate();
+    const [MyTeam, setMyTeam] = useState([]);
+const navigate = useNavigate();
     const addMemeberToMyTeam = (teamMember) => {
-        setMyTeam([...myTeam, teamMember])
+        setMyTeam([...MyTeam, teamMember])
     }
 
     return (
@@ -20,7 +19,7 @@ const navigete = useNavigate();
             )}
             <div>Mano komanda</div>
             <ul>
-                {myTeam.map(teamMember => <li key={teamMember.Id}>{teamMember.name}{teamMember.age} </li>)}
+                {MyTeam.map(teamMember => <li key={teamMember.Id}>{teamMember.name}{teamMember.age} </li>)}
             </ul>
         </>
     )
