@@ -53,7 +53,7 @@ function App() {
     {/* {cards.map(card => <CarComponent key={card.id} header={card.header} subtitle={card.subtitle} />)} */}
       <Routes>
 
-        <Route path="/data" element={<PostsDataFetching />} />
+        <Route path="/data" element={<PostsDataFetching />} /> {/* veikia  */}
         <Route path="/allforms" element={<AllForms />} /> {/* veikia  */}
         <Route path='/MyTeam' element={< MyTeam />} /> {/* veikia  */}
         <Route path='/StepCounter' element={<StepCounter />} /> {/* veikia  */}
